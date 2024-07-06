@@ -160,10 +160,14 @@ postings.map((item, index) => {
 
     let name = document.createElement("div");
     name.classList.add("name");
-    name.innerHTML = ` <h2> ${item.company}</h2>
-    <p class = "${item.new ? "" : "hidden"}" >New</p>
-    <p class = "${item.featured ? "" : "hidden"}" >Featured</p>
-    `
+
+    name.innerHTML = ` <h2> ${item.company}</h2> 
+
+    <p class= ${item.new ? "" : "hidden"}>New!</p>
+
+    <p class= ${item.featured ? "" : "hidden"}>Featured</p>
+
+     `
     
     account_info.append(name)
 
